@@ -1,0 +1,119 @@
+{
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.lineHeight": 18,
+    "editor.fontFamily": "'Courier New', Consolas, monospace",
+    "editor.fontSize": 12,
+    "workbench.editor.wrapTabs": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.wordWrap": "on",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["<C-e>"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        }
+    ],
+
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [":"],
+            "commands": [
+                "workbench.action.showCommands",
+            ],
+            "silent": true
+        },
+        {
+            "before": ["}"],
+            "after": ["w"]
+        },
+        {
+            "before": ["{"],
+            "after": ["b"]
+        },
+        {
+            "before": ["L"],
+            "after": ["g", "$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["g", "0"]
+        },
+        {
+            "before": ["<C-v>"],
+            "after": ["p"]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        // "<C-c>": false,
+        // "<C-v>": false,
+        "<C-z>": false,
+        "<C-x>": false,
+        "<C-w>": false,
+    },
+    "vim.commandLineModeKeyBindings": [
+
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": ["{"],
+            "after": ["b"]
+        },
+        {
+            "before": ["}"],
+            "after": ["w"]
+        }, 
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": ["<C-c>"],
+            "after": ["y"]
+        }
+    ]
+}
