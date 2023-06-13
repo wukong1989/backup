@@ -65,13 +65,16 @@
     ],
     "vim.leader": ",",
     "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false,
-        // "<C-c>": false,
-        // "<C-v>": false,
-        "<C-z>": false,
-        "<C-x>": false,
-        "<C-w>": false,
+        "<C-a>": false, // vscode select all
+        "<C-r>": false, // vim: redo, replaced for Q run lines
+        "<C-f>": false, // vscode find
+        "<C-x>": false, // vscode cut
+        // "<C-c>": false, // vscode copy
+        // "<C-v>": false, // vscode paste
+        "<C-z>": false, // vscode undo
+        "<C-y>": false, // vscode redo
+        "<C-t>": false, // vscode new module
+        "<C-w>": false, // vscode close file
     },
     "vim.commandLineModeKeyBindings": [
 
