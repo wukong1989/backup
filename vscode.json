@@ -24,13 +24,24 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-        "before": ["<leader>", "d"],
-        "after": ["d", "d"]
+            "before": ["<C-z>"],
+            "after": ["u"],
         },
         {
-        "before": ["K"],
-        "commands": ["lineBreakInsert"],
-        "silent": true
+            "before": ["h"],
+            "after": ["i"]
+        },
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },
+        {
+            "before": ["k"],
+            "after": ["j"]
+        },
+        {
+            "before": ["i"],
+            "after": ["k"]
         }
     ],
 
@@ -51,12 +62,12 @@
             "after": ["b"]
         },
         {
-            "before": ["L"],
+            "before": ["<C-l>"],
             "after": ["g", "$"]
         },
         {
-            "before": ["H"],
-            "after": ["g", "0"]
+            "before": ["<C-j>"],
+            "after": ["g", "^"]
         },
         {
             "before": ["<C-v>"],
@@ -71,10 +82,10 @@
         "<C-x>": false, // vscode cut
         // "<C-c>": false, // vscode copy
         // "<C-v>": false, // vscode paste
-        "<C-z>": false, // vscode undo
+        // "<C-z>": false, // vscode undo
         "<C-y>": false, // vscode redo
         "<C-t>": false, // vscode new module
-        "<C-w>": false, // vscode close file
+        "<C-w>": false // vscode close file
     },
     "vim.commandLineModeKeyBindings": [
 
@@ -89,11 +100,11 @@
             "after": ["w"]
         }, 
         {
-            "before": ["L"],
+            "before": ["<C-l>"],
             "after": ["$"]
         },
         {
-            "before": ["H"],
+            "before": ["<C-j>"],
             "after": ["^"]
         }
     ],
@@ -106,7 +117,7 @@
                 "editor.action.indentLines"
             ]
         },
-        {
+        {   
             "before": [
                 "<"
             ],
@@ -118,5 +129,24 @@
             "before": ["<C-c>"],
             "after": ["y"]
         }
-    ]
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["h"],
+            "after": ["i"]
+        },
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },
+        {
+            "before": ["k"],
+            "after": ["j"]
+        },
+        {
+            "before": ["i"],
+            "after": ["k"]
+        }
+    ],
+    "editor.lineNumbers": "relative"
 }
