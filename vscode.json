@@ -15,97 +15,63 @@
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-        "before": ["<C-e>"],
-        "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<C-z>"],
-            "after": ["u"],
-        },
-        {
-            "before": ["h"],
-            "after": ["i"]
-        },
-        {
-            "before": ["j"],
-            "after": ["h"]
-        },
-        {
-            "before": ["k"],
-            "after": ["j"]
-        },
-        {
-            "before": ["i"],
-            "after": ["k"]
-        }
-    ],
-
+    "vim.hlsearch": false,
     "vim.normalModeKeyBindings": [
         {
-            "before": [":"],
+            "before": [
+                ":"
+            ],
             "commands": [
-                "workbench.action.showCommands",
+                "workbench.action.showCommands"
             ],
             "silent": true
-        },
-        {
-            "before": ["}"],
-            "after": ["w"]
-        },
-        {
-            "before": ["{"],
-            "after": ["b"]
-        },
-        {
-            "before": ["<C-l>"],
-            "after": ["g", "$"]
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["g", "^"]
-        },
-        {
-            "before": ["<C-v>"],
-            "after": ["p"]
         }
     ],
     "vim.leader": ",",
     "vim.handleKeys": {
-        "<C-a>": false, // vscode select all
-        "<C-r>": false, // vim: redo, replaced for Q run lines
-        "<C-f>": false, // vscode find
-        "<C-x>": false, // vscode cut
-        // "<C-c>": false, // vscode copy
-        // "<C-v>": false, // vscode paste
-        // "<C-z>": false, // vscode undo
-        "<C-y>": false, // vscode redo
-        "<C-t>": false, // vscode new module
-        "<C-w>": false // vscode close file
+        "<C-a>": false,
+        "<C-r>": false,
+        "<C-f>": false,
+        "<C-x>": false,
+        "<C-y>": false,
+        "<C-t>": false,
+        "<C-w>": false
     },
-    "vim.commandLineModeKeyBindings": [
-
-    ],
+    "vim.commandLineModeKeyBindings": [],
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "h:\\projects\\.vimrc",
     "vim.operatorPendingModeKeyBindings": [
         {
-            "before": ["{"],
-            "after": ["b"]
+            "before": [
+                "{"
+            ],
+            "after": [
+                "b"
+            ]
         },
         {
-            "before": ["}"],
-            "after": ["w"]
-        }, 
-        {
-            "before": ["<C-l>"],
-            "after": ["$"]
+            "before": [
+                "}"
+            ],
+            "after": [
+                "w"
+            ]
         },
         {
-            "before": ["<C-j>"],
-            "after": ["^"]
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "^"
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -117,36 +83,13 @@
                 "editor.action.indentLines"
             ]
         },
-        {   
+        {
             "before": [
                 "<"
             ],
             "commands": [
                 "editor.action.outdentLines"
             ]
-        },
-        {
-            "before": ["<C-c>"],
-            "after": ["y"]
         }
     ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": ["h"],
-            "after": ["i"]
-        },
-        {
-            "before": ["j"],
-            "after": ["h"]
-        },
-        {
-            "before": ["k"],
-            "after": ["j"]
-        },
-        {
-            "before": ["i"],
-            "after": ["k"]
-        }
-    ],
-    "editor.lineNumbers": "relative"
 }
